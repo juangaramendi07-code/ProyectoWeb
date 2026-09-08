@@ -1,0 +1,141 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    background-color: #08afa5;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* MENÚ */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* CUERPO */
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* SECCIONES */
+
+section {
+    background-color: white;
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #08afa5;
+}
+
+
+/* IMÁGENES */
+
+img {
+    max-width: 100%;
+}
+
+
+/* TABLA */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #08afa5;
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: center;
+}
+
+
+/* VIDEO Y AUDIO */
+
+video {
+    max-width: 100%;
+}
+
+audio {
+    width: 100%;
+}
+
+
+/* FORMULARIO */
+
+form {
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+
+/* BOTÓN */
+
+button {
+    background-color: #08afa5;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #07877f;
+}
