@@ -1,141 +1,481 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+   ========================================= */
 
 body {
-    font-family: Arial, sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+
     margin: 0;
+
     background-color: #f5f5f5;
+
     color: #333;
+
 }
 
 
-/* ENCABEZADO */
+/* =========================================
+   ENCABEZADO
+   ========================================= */
 
 header {
+
     background-color: #08afa5;
+
     color: white;
+
     text-align: center;
+
     padding: 25px;
+
 }
+
+
+/* LOGO */
+
+.logo {
+
+    width: 100px;
+
+    height: 100px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s;
+
+}
+
+
+/* TRANSFORMACIÓN DEL LOGO */
+
+.logo:hover {
+
+    transform: rotate(10deg) scale(1.1);
+
+}
+
+
+/* TÍTULO */
 
 header h1 {
-    margin: 0;
+
+    margin: 10px 0 0;
+
     font-size: 30px;
+
+    animation: aparecer 2s;
+
 }
+
+
+/* ESLOGAN */
 
 header p {
+
     font-size: 18px;
+
+    animation: mover 2s;
+
 }
 
 
-/* MENÚ */
+/* =========================================
+   MENÚ
+   ========================================= */
 
 nav {
+
     margin-top: 20px;
+
 }
+
 
 nav a {
+
+    display: inline-block;
+
     color: white;
+
     text-decoration: none;
+
     margin: 10px;
+
     font-weight: bold;
+
+    transition: transform 0.3s;
+
 }
+
+
+/* HOVER DEL MENÚ */
 
 nav a:hover {
+
     text-decoration: underline;
+
+    transform: scale(1.1);
+
 }
 
 
-/* CUERPO */
+/* =========================================
+   CUERPO PRINCIPAL
+   ========================================= */
 
 main {
+
     width: 90%;
+
     max-width: 900px;
+
     margin: auto;
+
 }
 
 
-/* SECCIONES */
+/* =========================================
+   SECCIONES
+   ========================================= */
 
 section {
+
     background-color: white;
+
     margin: 25px 0;
+
     padding: 25px;
+
     border-radius: 8px;
+
+    animation: aparecerSeccion 1s;
+
 }
 
+
 section h2 {
+
     color: #08afa5;
+
+}
+
+
+/* =========================================
+   GALERÍA
+   ========================================= */
+
+.galeria {
+
+    text-align: center;
+
 }
 
 
 /* IMÁGENES */
 
-img {
-    max-width: 100%;
+.imagen-lente {
+
+    width: 28%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin: 10px;
+
+    transition: transform 0.4s;
+
 }
 
 
-/* TABLA */
+/* TRANSFORMACIÓN DE IMÁGENES */
+
+.imagen-lente:hover {
+
+    transform: scale(1.1);
+
+}
+
+
+/* =========================================
+   VIDEO
+   ========================================= */
+
+iframe {
+
+    max-width: 100%;
+
+    border-radius: 10px;
+
+}
+
+
+/* =========================================
+   PRODUCTOS
+   ========================================= */
+
+.producto {
+
+    background-color: #f5f5f5;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    margin: 15px 0;
+
+    text-align: center;
+
+    transition: transform 0.3s;
+
+}
+
+
+/* TRANSFORMACIÓN DE PRODUCTOS */
+
+.producto:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+/* ÍCONOS */
+
+.icono {
+
+    font-size: 40px;
+
+}
+
+
+/* =========================================
+   TABLA
+   ========================================= */
 
 table {
+
     width: 100%;
+
     border-collapse: collapse;
+
 }
 
+
 th {
+
     background-color: #08afa5;
+
     color: white;
+
 }
+
 
 th,
 td {
+
     border: 1px solid #999;
+
     padding: 12px;
+
     text-align: center;
+
 }
 
 
-/* VIDEO Y AUDIO */
+tr:hover {
 
-video {
-    max-width: 100%;
-}
+    background-color: #e8f7f6;
 
-audio {
-    width: 100%;
 }
 
 
-/* FORMULARIO */
+/* =========================================
+   VECTOR SVG
+   ========================================= */
+
+.vector {
+
+    text-align: center;
+
+    transition: transform 0.4s;
+
+}
+
+
+.vector:hover {
+
+    transform: scale(1.2);
+
+}
+
+
+/* =========================================
+   FORMULARIO
+   ========================================= */
 
 form {
+
     width: 100%;
+
 }
 
+
 label {
+
+    display: block;
+
     font-weight: bold;
+
+    margin-top: 15px;
+
 }
+
 
 input,
 textarea {
+
     width: 100%;
+
+    box-sizing: border-box;
+
     padding: 10px;
+
     margin-top: 5px;
+
     border: 1px solid #aaa;
+
     border-radius: 5px;
+
+    font-family: 'Poppins', sans-serif;
+
 }
 
 
-/* BOTÓN */
+/* =========================================
+   BOTÓN
+   ========================================= */
 
 button {
+
     background-color: #08afa5;
+
     color: white;
+
     border: none;
+
     padding: 12px 25px;
+
+    margin-top: 15px;
+
     border-radius: 5px;
+
     cursor: pointer;
+
+    transition: transform 0.3s, background-color 0.3s;
+
 }
 
+
+/* HOVER DEL BOTÓN */
+
 button:hover {
+
     background-color: #07877f;
+
+    transform: scale(1.05);
+
+}
+
+
+/* =========================================
+   PIE DE PÁGINA
+   ========================================= */
+
+footer {
+
+    background-color: #08afa5;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+
+}
+
+
+/* =========================================
+   ANIMACIONES
+   ========================================= */
+
+
+/* ANIMACIÓN DEL TÍTULO */
+
+@keyframes aparecer {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+
+/* ANIMACIÓN DEL ESLOGAN */
+
+@keyframes mover {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* ANIMACIÓN DE LAS SECCIONES */
+
+@keyframes aparecerSeccion {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
 }

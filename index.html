@@ -2,38 +2,62 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-  <title>VISIÓN NÍTIDA</title>
-  <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>VISIÓN NÍTIDA</title>
+
+    <!-- FUENTE EXTERNA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- ARCHIVO CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!--ENCABEZADO-->
-    <header>
-        <img src="imagenes/marca.jpg">
-         <h1>VISIÓN NÍTIDA</h1>
 
+    <!-- ENCABEZADO -->
+    <header>
+
+        <!-- LOGO -->
+        <img src="imagenes/marca.jpg"
+             alt="Logo de Visión Nítida"
+             class="logo">
+
+        <!-- TÍTULO -->
+        <h1>VISIÓN NÍTIDA</h1>
+
+        <!-- ESLOGAN -->
         <p>VEMOS POR TI 👁️</p>
 
+
+        <!-- MENÚ -->
         <nav>
 
-            <a href="#inicio">Inicio</a>
+            <a href="#inicio">👁️ Inicio</a>
 
-            <a href="#productos">Productos</a>
+            <a href="#productos">👓 Productos</a>
 
-            <a href="#contacto">Contacto</a>
+            <a href="#contacto">📩 Contacto</a>
 
         </nav>
-        
-     
-    </header>
-    <!--CUERPO-->
-    <main>
-         <section id="inicio">
 
-            <h2>BIENVENIDOS A VISION NITIDA</h2>
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+
+        <!-- INICIO -->
+        <section id="inicio">
+
+            <h2>BIENVENIDOS A VISIÓN NÍTIDA</h2>
 
             <p>
                 Cuidamos tu visión con productos
@@ -42,49 +66,56 @@
             </p>
 
             <br>
+
             <p>
                 Encuentra lentes modernos,
                 cómodos y de calidad.
             </p>
-            
 
         </section>
 
-    
-         <section>
+
+        <!-- NUESTROS LENTES -->
+        <section>
 
             <h2>NUESTROS LENTES</h2>
 
-            <img src="imagenes/lentesC.jpg"
-                 alt="Lentes de Visión Nítida"
-                 width="350">
+            <div class="galeria">
 
-            <img src="imagenes/lentesB.jpg"
-                 alt="Lentes de Visión Nítida"
-                 width="350">
-            
-             <img src="imagenes/lentesI.jpg"
-                 alt="Lentes de Visión Nítida"
-                 width="350">
-                 
-                 
+                <img class="imagen-lente"
+                     src="imagenes/lentesC.jpg"
+                     alt="Lentes de Visión Nítida">
+
+                <img class="imagen-lente"
+                     src="imagenes/lentesB.jpg"
+                     alt="Lentes de Visión Nítida">
+
+                <img class="imagen-lente"
+                     src="imagenes/lentesI.jpg"
+                     alt="Lentes de Visión Nítida">
+
+            </div>
 
         </section>
-        <section id="video">
-    <h2>VIDEO DE COMO CUIDAR NUESTROS OJOS</h2>
 
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/TtBOHvaw5pQ?si=mmcYS3N_di_L6egL"
-        title="VIDEO DE COMO CUIDAR NUESTROS OJOS"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-    </iframe>
-</section>
-        
-        <!--NUESTROS PRODUCTOS-->
+
+        <!-- VIDEO -->
+        <section id="video">
+
+            <h2>VIDEO DE CÓMO CUIDAR NUESTROS OJOS</h2>
+
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/TtBOHvaw5pQ?si=mmcYS3N_di_L6egL"
+                title="Video de cómo cuidar nuestros ojos"
+                allowfullscreen>
+            </iframe>
+
+        </section>
+
+
+        <!-- PRODUCTOS -->
         <section id="productos">
 
             <h2>CATÁLOGO DE PRODUCTOS</h2>
@@ -94,43 +125,73 @@
             </p>
 
 
-            <h3>ARMAZONES MODERNOS</h3>
+            <!-- PRODUCTO 1 -->
+            <div class="producto">
 
-            <p>
-                Diseños modernos y cómodos para
-                el uso diario.
-            </p>
+                <div class="icono">
+                    👓
+                </div>
 
-            <p>
-                <strong>Precio: S/ 150</strong>
-            </p>
+                <h3>ARMAZONES MODERNOS</h3>
+
+                <p>
+                    Diseños modernos y cómodos para
+                    el uso diario.
+                </p>
+
+                <p>
+                    <strong>Precio: S/ 150</strong>
+                </p>
+
+            </div>
 
 
-            <h3>LENTES DE SOL</h3>
+            <!-- PRODUCTO 2 -->
+            <div class="producto">
 
-            <p>
-                Protección para tus ojos frente
-                a la luz solar.
-            </p>
+                <div class="icono">
+                    🕶️
+                </div>
 
-            <p>
-                <strong>Precio: S/ 120</strong>
-            </p>
+                <h3>LENTES DE SOL</h3>
 
-             <h3>LENTES DE CONTACTO</h3>
+                <p>
+                    Protección para tus ojos frente
+                    a la luz solar.
+                </p>
 
-            <p>
-               Lentes de contacto cómodos y prácticos, 
-               ideales para mejorar tu visión y complementar tu estilo.
-            </p>
+                <p>
+                    <strong>Precio: S/ 120</strong>
+                </p>
 
-            <p>
-                <strong>Precio: S/ 100</strong>
-            </p>
+            </div>
+
+
+            <!-- PRODUCTO 3 -->
+            <div class="producto">
+
+                <div class="icono">
+                    👁️
+                </div>
+
+                <h3>LENTES DE CONTACTO</h3>
+
+                <p>
+                    Lentes de contacto cómodos y
+                    prácticos, ideales para mejorar
+                    tu visión y complementar tu estilo.
+                </p>
+
+                <p>
+                    <strong>Precio: S/ 100</strong>
+                </p>
+
+            </div>
 
         </section>
-        <!-- TABLA -->
 
+
+        <!-- TABLA -->
         <section>
 
             <h2>TABLA DE PRODUCTOS</h2>
@@ -147,6 +208,7 @@
 
                 </tr>
 
+
                 <tr>
 
                     <td>Armazones Modernos</td>
@@ -157,6 +219,7 @@
 
                 </tr>
 
+
                 <tr>
 
                     <td>Lentes de Sol</td>
@@ -166,6 +229,7 @@
                     <td>S/ 120</td>
 
                 </tr>
+
 
                 <tr>
 
@@ -180,8 +244,46 @@
             </table>
 
         </section>
-        <!-- FORMULARIO -->
 
+
+        <!-- VECTORES SVG -->
+        <section>
+
+            <h2>ÍCONO VECTORIAL</h2>
+
+            <p>
+                Este ícono fue construido utilizando SVG.
+            </p>
+
+
+            <div class="vector">
+
+                <svg width="100"
+                     height="100"
+                     viewBox="0 0 100 100">
+
+                    <circle
+                        cx="50"
+                        cy="50"
+                        r="40"
+                        fill="none"
+                        stroke="#08afa5"
+                        stroke-width="5"/>
+
+                    <circle
+                        cx="50"
+                        cy="50"
+                        r="15"
+                        fill="#08afa5"/>
+
+                </svg>
+
+            </div>
+
+        </section>
+
+
+        <!-- FORMULARIO -->
         <section id="contacto">
 
             <h2>CONTÁCTANOS</h2>
@@ -192,44 +294,55 @@
                     Nombre:
                 </label>
 
-                <input type="text"
-                       id="nombre"
-                       name="nombre">
-
-                <br><br>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Escribe tu nombre">
 
 
                 <label for="correo">
                     Correo:
                 </label>
 
-                <input type="email"
-                       id="correo"
-                       name="correo">
-
-                <br><br>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="Escribe tu correo">
 
 
                 <label for="mensaje">
                     Mensaje:
                 </label>
 
-                <br>
-
-                <textarea id="mensaje"
-                          name="mensaje"
-                          rows="5"
-                          cols="30"></textarea>
-
-                <br><br>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    placeholder="Escribe tu mensaje"></textarea>
 
 
                 <button type="submit">
                     Enviar
                 </button>
+
             </form>
-        </section> 
+
+        </section>
+
     </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>
+            © 2026 VISIÓN NÍTIDA - VEMOS POR TI 👁️
+        </p>
+
+    </footer>
+
 </body>
 
 </html>
