@@ -1,481 +1,339 @@
-/* =========================================
-   CONFIGURACIÓN GENERAL
-   ========================================= */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-
-    font-family: 'Poppins', sans-serif;
-
+    font-family: Arial, sans-serif;
     margin: 0;
-
-    background-color: #f5f5f5;
-
-    color: #333;
-
+    background-color: #f2f8f7;
+    color: #333333;
+    line-height: 1.6;
 }
 
+img {
+    max-width: 100%;
+}
 
-/* =========================================
-   ENCABEZADO
-   ========================================= */
+h2 {
+    color: #087f78;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ENCABEZADO */
 
 header {
-
     background-color: #08afa5;
-
     color: white;
-
+    padding: 25px 15px;
     text-align: center;
-
-    padding: 25px;
-
 }
 
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-/* LOGO */
+.header-container h1 {
+    font-size: 32px;
+    margin: 5px;
+}
 
-.logo {
-
+.marca {
     width: 100px;
-
     height: 100px;
-
-    border-radius: 50%;
-
     object-fit: cover;
-
-    transition: transform 0.4s;
-
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: transform 0.3s;
 }
 
-
-/* TRANSFORMACIÓN DEL LOGO */
-
-.logo:hover {
-
-    transform: rotate(10deg) scale(1.1);
-
+.marca:hover {
+    transform: scale(1.08);
 }
 
-
-/* TÍTULO */
-
-header h1 {
-
-    margin: 10px 0 0;
-
-    font-size: 30px;
-
-    animation: aparecer 2s;
-
-}
-
-
-/* ESLOGAN */
-
-header p {
-
-    font-size: 18px;
-
-    animation: mover 2s;
-
-}
-
-
-/* =========================================
-   MENÚ
-   ========================================= */
+/* MENÚ */
 
 nav {
-
-    margin-top: 20px;
-
+    background-color: #087f78;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px;
 }
-
 
 nav a {
-
-    display: inline-block;
-
     color: white;
-
     text-decoration: none;
-
-    margin: 10px;
-
     font-weight: bold;
-
-    transition: transform 0.3s;
-
+    padding: 10px 15px;
 }
-
-
-/* HOVER DEL MENÚ */
 
 nav a:hover {
-
-    text-decoration: underline;
-
-    transform: scale(1.1);
-
+    background-color: #045d57;
+    border-radius: 5px;
 }
 
-
-/* =========================================
-   CUERPO PRINCIPAL
-   ========================================= */
+/* SECCIONES */
 
 main {
-
-    width: 90%;
-
-    max-width: 900px;
-
-    margin: auto;
-
+    width: 92%;
+    max-width: 1150px;
+    margin: 25px auto;
 }
-
-
-/* =========================================
-   SECCIONES
-   ========================================= */
 
 section {
-
     background-color: white;
-
-    margin: 25px 0;
-
+    margin-bottom: 25px;
     padding: 25px;
-
-    border-radius: 8px;
-
-    animation: aparecerSeccion 1s;
-
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
-
-section h2 {
-
-    color: #08afa5;
-
-}
-
-
-/* =========================================
-   GALERÍA
-   ========================================= */
+/* GALERÍA CON FLEXBOX */
 
 .galeria {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin: 25px 0;
+}
 
+.tarjeta {
+    flex: 1 1 250px;
+    max-width: 340px;
+    padding: 18px;
+    background-color: #ffffff;
+    border: 1px solid #d9e9e7;
+    border-radius: 10px;
     text-align: center;
-
-}
-
-
-/* IMÁGENES */
-
-.imagen-lente {
-
-    width: 28%;
-
-    height: 200px;
-
-    object-fit: cover;
-
-    border-radius: 10px;
-
-    margin: 10px;
-
-    transition: transform 0.4s;
-
-}
-
-
-/* TRANSFORMACIÓN DE IMÁGENES */
-
-.imagen-lente:hover {
-
-    transform: scale(1.1);
-
-}
-
-
-/* =========================================
-   VIDEO
-   ========================================= */
-
-iframe {
-
-    max-width: 100%;
-
-    border-radius: 10px;
-
-}
-
-
-/* =========================================
-   PRODUCTOS
-   ========================================= */
-
-.producto {
-
-    background-color: #f5f5f5;
-
-    border-radius: 10px;
-
-    padding: 20px;
-
-    margin: 15px 0;
-
-    text-align: center;
-
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s;
-
 }
 
-
-/* TRANSFORMACIÓN DE PRODUCTOS */
-
-.producto:hover {
-
+.tarjeta:hover {
     transform: translateY(-5px);
-
 }
 
-
-/* ÍCONOS */
-
-.icono {
-
-    font-size: 40px;
-
+.tarjeta h3 {
+    color: #087f78;
 }
 
+.tarjeta img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 7px;
+}
 
-/* =========================================
-   TABLA
-   ========================================= */
+/* PRECIOS */
+
+.precio {
+    color: #087f78;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* VIDEO RESPONSIVE */
+
+.video {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    aspect-ratio: 16 / 9;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+/* TABLA */
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
 
 table {
-
     width: 100%;
-
     border-collapse: collapse;
-
+    margin-top: 20px;
 }
 
+th, td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+}
 
 th {
-
     background-color: #08afa5;
-
     color: white;
-
 }
 
-
-th,
-td {
-
-    border: 1px solid #999;
-
-    padding: 12px;
-
-    text-align: center;
-
+tbody tr:nth-child(even) {
+    background-color: #edf7f6;
 }
 
-
-tr:hover {
-
-    background-color: #e8f7f6;
-
-}
-
-
-/* =========================================
-   VECTOR SVG
-   ========================================= */
-
-.vector {
-
-    text-align: center;
-
-    transition: transform 0.4s;
-
-}
-
-
-.vector:hover {
-
-    transform: scale(1.2);
-
-}
-
-
-/* =========================================
-   FORMULARIO
-   ========================================= */
+/* FORMULARIO */
 
 form {
-
-    width: 100%;
-
+    max-width: 600px;
+    margin: 20px auto;
 }
-
 
 label {
-
     display: block;
-
+    margin-top: 15px;
     font-weight: bold;
-
-    margin-top: 15px;
-
 }
 
-
-input,
-textarea {
-
+input, textarea {
     width: 100%;
-
-    box-sizing: border-box;
-
-    padding: 10px;
-
-    margin-top: 5px;
-
-    border: 1px solid #aaa;
-
-    border-radius: 5px;
-
-    font-family: 'Poppins', sans-serif;
-
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
+input:focus, textarea:focus {
+    outline: 2px solid #08afa5;
+}
 
-/* =========================================
-   BOTÓN
-   ========================================= */
-
-button {
-
+button, .boton {
+    display: inline-block;
     background-color: #08afa5;
-
     color: white;
-
+    padding: 12px 20px;
     border: none;
-
-    padding: 12px 25px;
-
-    margin-top: 15px;
-
-    border-radius: 5px;
-
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
     cursor: pointer;
-
-    transition: transform 0.3s, background-color 0.3s;
-
+    margin-top: 15px;
 }
 
-
-/* HOVER DEL BOTÓN */
-
-button:hover {
-
-    background-color: #07877f;
-
-    transform: scale(1.05);
-
+button:hover, .boton:hover {
+    background-color: #066b65;
 }
 
-
-/* =========================================
-   PIE DE PÁGINA
-   ========================================= */
+/* PIE DE PÁGINA */
 
 footer {
-
-    background-color: #08afa5;
-
+    background-color: #064f4b;
     color: white;
+    padding: 30px 5% 15px;
+}
 
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.footer-container > div {
+    flex: 1 1 220px;
+}
+
+.footer-container h3 {
+    color: #7ce5dd;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
     text-align: center;
-
-    padding: 20px;
-
-    margin-top: 30px;
-
+    border-top: 1px solid #4c8b86;
+    padding-top: 15px;
+    margin-top: 25px;
 }
 
+/* TABLETAS */
 
-/* =========================================
-   ANIMACIONES
-   ========================================= */
-
-
-/* ANIMACIÓN DEL TÍTULO */
-
-@keyframes aparecer {
-
-    from {
-
-        opacity: 0;
-
+@media (max-width: 900px) {
+    main {
+        width: 95%;
     }
 
-    to {
-
-        opacity: 1;
-
+    .tarjeta {
+        flex-basis: 220px;
     }
-
 }
 
+/* CELULARES */
 
-/* ANIMACIÓN DEL ESLOGAN */
-
-@keyframes mover {
-
-    from {
-
-        opacity: 0;
-
-        transform: translateY(-20px);
-
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    to {
-
-        opacity: 1;
-
-        transform: translateY(0);
-
+    .header-container h1 {
+        font-size: 26px;
     }
 
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    main {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    section {
+        padding: 16px;
+    }
+
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .tarjeta img {
+        height: 220px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
 }
-
-
-/* ANIMACIÓN DE LAS SECCIONES */
-
-@keyframes aparecerSeccion {
-
-    from {
-
-        opacity: 0;
-
-        transform: translateY(20px);
-
-    }
-
-    to {
-
-        opacity: 1;
-
-        transform: translateY(0);
-
-    }
-
+h1, h2, h3,p,td {
+    font-weight: bold;
 }

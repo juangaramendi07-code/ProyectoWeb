@@ -1,21 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>VISIÓN NÍTIDA</title>
-
-    <!-- FUENTE EXTERNA -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-          rel="stylesheet">
-
-    <!-- ARCHIVO CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,326 +14,366 @@
 
     <!-- ENCABEZADO -->
     <header>
+        <div class="header-container">
+            <img src="imagenes/marca.jpg" alt="Logo de Visión Nítida" class="marca">
 
-        <!-- LOGO -->
-        <img src="imagenes/marca.jpg"
-             alt="Logo de Visión Nítida"
-             class="logo">
-
-        <!-- TÍTULO -->
-        <h1>VISIÓN NÍTIDA</h1>
-
-        <!-- ESLOGAN -->
-        <p>VEMOS POR TI 👁️</p>
-
-
-        <!-- MENÚ -->
-        <nav>
-
-            <a href="#inicio">👁️ Inicio</a>
-
-            <a href="#productos">👓 Productos</a>
-
-            <a href="#contacto">📩 Contacto</a>
-
-        </nav>
-
+            <div>
+                <h1>VISIÓN NÍTIDA</h1>
+                <p>VEMOS POR TI 👁️</p>
+            </div>
+        </div>
     </header>
 
+    <!-- MENÚ -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#mision">Misión y Visión</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main>
 
-
         <!-- INICIO -->
         <section id="inicio">
-
             <h2>BIENVENIDOS A VISIÓN NÍTIDA</h2>
 
             <p>
-                Cuidamos tu visión con productos
-                pensados para proteger y mejorar
-                tu vista 👁️
+                En Visión Nítida nos preocupamos por tu salud visual
+                Encuentra lentes modernos, cómodos y adecuados para
+                acompañarte en tus actividades diarias
             </p>
 
-            <br>
+            <h2>NUESTROS PRODUCTOS</h2>
 
-            <p>
-                Encuentra lentes modernos,
-                cómodos y de calidad.
-            </p>
+            <!-- GALERÍA CON FLEXBOX -->
+            <div class="galeria">
 
+                <div class="tarjeta">
+                    <img src="imagenes/lentesB.jpg" alt="Lentes de sol">
+                    <h3>Lentes de Sol</h3>
+                    <p>Protección y estilo para los días soleados</p>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="imagenes/lentesG.jpg" alt="Lentes de lectura">
+                    <h3>Lentes de Lectura</h3>
+                    <p>Comodidad y claridad para leer</p>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="imagenes/azul.jpg" alt="Lentes con filtro azul">
+                    <h3>Filtro Azul</h3>
+                    <p>Una opción para quienes utilizan pantallas</p>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="imagenes/lentesA.jpg" alt="Lentes ópticos">
+                    <h3>Lentes Ópticos</h3>
+                    <p>Modelos para el uso diario</p>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="imagenes/lentesD.jpg" alt="Armazones modernos">
+                    <h3>Armazones Modernos</h3>
+                    <p>Diferentes diseños para tu estilo</p>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="imagenes/lentesI.jpg" alt="Lentes de contacto">
+                    <h3>Lentes de Contacto</h3>
+                    <p>Una alternativa a los lentes tradicionales</p>
+                </div>
+
+            </div>
+
+            <!-- VIDEO -->
+            <h2>¿CÓMO CUIDAR NUESTROS OJOS?</h2>
+
+            <div class="video">
+                <iframe
+                    src="https://www.youtube.com/embed/TtBOHvaw5pQ"
+                    title="Video sobre el cuidado de los ojos"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="cita">
+                <h3>Cuida tu salud visual</h3>
+                <p>Visítanos para obtener más información sobre nuestros productos</p>
+                <a href="#contacto" class="boton">Contáctanos</a>
+            </div>
         </section>
 
-
-        <!-- NUESTROS LENTES -->
-        <section>
-
-            <h2>NUESTROS LENTES</h2>
+        <!-- MISIÓN Y VISIÓN -->
+        <section id="mision">
+            <h2>MISIÓN Y VISIÓN</h2>
 
             <div class="galeria">
 
-                <img class="imagen-lente"
-                     src="imagenes/lentesC.jpg"
-                     alt="Lentes de Visión Nítida">
+                <article class="tarjeta">
+                    <h3>Nuestra Misión</h3>
 
-                <img class="imagen-lente"
-                     src="imagenes/lentesB.jpg"
-                     alt="Lentes de Visión Nítida">
+                    <p>
+                        Brindar servicios ópticos de calidad que mejoren
+                        la salud visual de nuestros clientes mediante
+                        atención personalizada y productos confiables
+                    </p>
 
-                <img class="imagen-lente"
-                     src="imagenes/lentesI.jpg"
-                     alt="Lentes de Visión Nítida">
+                    <img src="imagenes/lentesF.jpg" alt="Productos ópticos">
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Nuestra Visión</h3>
+
+                    <p>
+                        Ser una óptica reconocida por la calidad de sus
+                        productos, la atención al cliente y el compromiso
+                        con el bienestar visual
+                    </p>
+
+                    <img src="imagenes/marca.jpg" alt="Modelos de lentes">
+                </article>
 
             </div>
-
         </section>
 
-
-        <!-- VIDEO -->
-        <section id="video">
-
-            <h2>VIDEO DE CÓMO CUIDAR NUESTROS OJOS</h2>
-
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/TtBOHvaw5pQ?si=mmcYS3N_di_L6egL"
-                title="Video de cómo cuidar nuestros ojos"
-                allowfullscreen>
-            </iframe>
-
-        </section>
-
-
-        <!-- PRODUCTOS -->
-        <section id="productos">
-
+        <!-- CATÁLOGO -->
+        <section id="catalogo">
             <h2>CATÁLOGO DE PRODUCTOS</h2>
 
             <p>
-                Conoce algunos de nuestros productos.
+                Explora nuestros modelos y encuentra los lentes
+                perfectos para ti
             </p>
 
+            <div class="galeria">
 
-            <!-- PRODUCTO 1 -->
-            <div class="producto">
+                <article class="tarjeta">
+                    <img src="imagenes/lentesB.jpg" alt="Lentes de sol polarizados">
+                    <h3>Lentes de Sol Polarizados</h3>
+                    <p>Protección UV400 y estilo moderno</p>
+                    <p class="precio">S/ 100.00</p>
+                </article>
 
-                <div class="icono">
-                    👓
-                </div>
+                <article class="tarjeta">
+                    <img src="imagenes/lentesA.jpg" alt="Lentes ópticos HD">
+                    <h3>Lentes Ópticos HD</h3>
+                    <p>Visión nítida y comodidad</p>
+                    <p class="precio">S/ 150.00</p>
+                </article>
 
-                <h3>ARMAZONES MODERNOS</h3>
+                <article class="tarjeta">
+                    <img src="imagenes/lentesI.jpg" alt="Lentes de contacto">
+                    <h3>Lentes de Contacto</h3>
+                    <p>Una alternativa práctica para tu visión</p>
+                    <p class="precio">S/ 90.00</p>
+                </article>
 
-                <p>
-                    Diseños modernos y cómodos para
-                    el uso diario.
-                </p>
+                <article class="tarjeta">
+                    <img src="imagenes/azul.jpg" alt="Lentes con filtro azul">
+                    <h3>Lentes con Filtro Azul</h3>
+                    <p>Para personas que usan pantallas digitales</p>
+                    <p class="precio">S/ 120.00</p>
+                </article>
 
-                <p>
-                    <strong>Precio: S/ 150</strong>
-                </p>
+                <article class="tarjeta">
+                    <img src="imagenes/lentesD.jpg" alt="Armazones modernos">
+                    <h3>Armazones Modernos</h3>
+                    <p>Diseños actuales y materiales livianos</p>
+                    <p class="precio">S/ 180.00</p>
+                </article>
 
-            </div>
+                <article class="tarjeta">
+                    <img src="imagenes/unix.jpg" alt="Lentes deportivos">
+                    <h3>Lentes Deportivos</h3>
+                    <p>Diseños cómodos para tus actividades</p>
+                    <p class="precio">S/ 160.00</p>
+                </article>
 
+                <article class="tarjeta">
+                    <img src="imagenes/lentesG.jpg" alt="Lentes de lectura premium">
+                    <h3>Lentes de Lectura</h3>
+                    <p>Comodidad para tus momentos de lectura</p>
+                    <p class="precio">S/ 70.00</p>
+                </article>
 
-            <!-- PRODUCTO 2 -->
-            <div class="producto">
-
-                <div class="icono">
-                    🕶️
-                </div>
-
-                <h3>LENTES DE SOL</h3>
-
-                <p>
-                    Protección para tus ojos frente
-                    a la luz solar.
-                </p>
-
-                <p>
-                    <strong>Precio: S/ 120</strong>
-                </p>
-
-            </div>
-
-
-            <!-- PRODUCTO 3 -->
-            <div class="producto">
-
-                <div class="icono">
-                    👁️
-                </div>
-
-                <h3>LENTES DE CONTACTO</h3>
-
-                <p>
-                    Lentes de contacto cómodos y
-                    prácticos, ideales para mejorar
-                    tu visión y complementar tu estilo.
-                </p>
-
-                <p>
-                    <strong>Precio: S/ 100</strong>
-                </p>
+                <article class="tarjeta">
+                    <img src="imagenes/caja.jpg" alt="Estuche para lentes">
+                    <h3>Estuche de Lentes</h3>
+                    <p>Protege tus lentes cuando no los utilizas</p>
+                    <p class="precio">S/ 30.00</p>
+                </article>
 
             </div>
 
+            <!-- TABLA -->
+            <h2>LISTA DE PRECIOS</h2>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Lentes de Sol</td>
+                            <td>Protección y estilo</td>
+                            <td>S/ 100.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lentes Ópticos</td>
+                            <td>Uso diario</td>
+                            <td>S/ 150.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lentes de Contacto</td>
+                            <td>Alternativa óptica</td>
+                            <td>S/ 90.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Estuche de Lentes</td>
+                            <td>Protección para tus lentes</td>
+                            <td>S/ 30.00</td>
+                        </tr>
+                        <tr>
+                            <td>Lentes con Filtro Azul</td>
+                            <td>Protección para pantallas digitales</td>
+                            <td>S/ 120.00</td>
+                        </tr>
+
+                        <tr>
+                          <td>Armazones Modernos</td>
+                          <td>Diseños actuales y livianos</td>
+                          <td>S/ 180.00</td>
+                        </tr>
+
+                        <tr>
+                           <td>Lentes Deportivos</td>
+                           <td>Comodidad para actividades deportivas</td>
+                           <td>S/ 160.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lentes de Lectura</td>
+                            <td>Comodidad para leer</td>
+                            <td>S/ 70.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
+        <!-- SERVICIOS -->
+        <section id="servicios">
+            <h2>NUESTROS SERVICIOS</h2>
 
-        <!-- TABLA -->
-        <section>
+            <div class="galeria">
 
-            <h2>TABLA DE PRODUCTOS</h2>
+                <article class="tarjeta">
+                    <img src="imagenes/as.webp.jpg" alt="Examen visual">
+                    <h3>Exámenes Visuales</h3>
+                    <p>Evaluación de la vista y orientación visual</p>
+                </article>
 
-            <table>
+                <article class="tarjeta">
+                    <img src="imagenes/lentesC.jpg" alt="Adaptación de lentes">
+                    <h3>Adaptación de Lentes</h3>
+                    <p>Orientación para elegir modelos cómodos</p>
+                </article>
 
-                <tr>
-
-                    <th>Producto</th>
-
-                    <th>Tipo</th>
-
-                    <th>Precio</th>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>Armazones Modernos</td>
-
-                    <td>Óptico</td>
-
-                    <td>S/ 150</td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>Lentes de Sol</td>
-
-                    <td>Sol</td>
-
-                    <td>S/ 120</td>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>Lentes de Contacto</td>
-
-                    <td>Contacto</td>
-
-                    <td>S/ 100</td>
-
-                </tr>
-
-            </table>
-
-        </section>
-
-
-        <!-- VECTORES SVG -->
-        <section>
-
-            <h2>ÍCONO VECTORIAL</h2>
-
-            <p>
-                Este ícono fue construido utilizando SVG.
-            </p>
-
-
-            <div class="vector">
-
-                <svg width="100"
-                     height="100"
-                     viewBox="0 0 100 100">
-
-                    <circle
-                        cx="50"
-                        cy="50"
-                        r="40"
-                        fill="none"
-                        stroke="#08afa5"
-                        stroke-width="5"/>
-
-                    <circle
-                        cx="50"
-                        cy="50"
-                        r="15"
-                        fill="#08afa5"/>
-
-                </svg>
+                <article class="tarjeta">
+                    <img src="imagenes/lentesH.jpg" alt="Mantenimiento de lentes">
+                    <h3>Reparación y Mantenimiento</h3>
+                    <p>Cuidado y ajuste de tus armazones</p>
+                </article>
 
             </div>
-
         </section>
 
-
-        <!-- FORMULARIO -->
+        <!-- CONTACTO -->
         <section id="contacto">
-
             <h2>CONTÁCTANOS</h2>
 
-            <form>
+            <form action="#" method="get">
 
-                <label for="nombre">
-                    Nombre:
-                </label>
-
+                <label for="nombre">Nombre completo:</label>
                 <input
                     type="text"
                     id="nombre"
                     name="nombre"
-                    placeholder="Escribe tu nombre">
+                    placeholder="Escribe tu nombre"
+                    required>
 
-
-                <label for="correo">
-                    Correo:
-                </label>
-
+                <label for="correo">Correo electrónico:</label>
                 <input
                     type="email"
                     id="correo"
                     name="correo"
-                    placeholder="Escribe tu correo">
+                    placeholder="ejemplo@correo.com"
+                    required>
 
-
-                <label for="mensaje">
-                    Mensaje:
-                </label>
-
+                <label for="mensaje">Tu mensaje:</label>
                 <textarea
                     id="mensaje"
                     name="mensaje"
                     rows="5"
-                    placeholder="Escribe tu mensaje"></textarea>
+                    placeholder="Escribe tu consulta"
+                    required></textarea>
+                <label for="telefono">Teléfono:</label>
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="Escribe tu teléfono"
+                    required>
 
-
-                <button type="submit">
-                    Enviar
-                </button>
+                <button type="submit">Enviar mensaje</button>
 
             </form>
-
         </section>
 
     </main>
 
-
     <!-- PIE DE PÁGINA -->
     <footer>
+        <div class="footer-container">
 
-        <p>
-            © 2026 VISIÓN NÍTIDA - VEMOS POR TI 👁️
+            <div>
+                <h3>VISIÓN NÍTIDA</h3>
+                <p>Vemos por ti 👁️</p>
+            </div>
+
+            <div>
+                <h3>Enlaces</h3>
+                <p><a href="#inicio">Inicio</a></p>
+                <p><a href="#catalogo">Catálogo</a></p>
+                <p><a href="#contacto">Contacto</a></p>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+                <p>Email: info@VisionNitida.com</p>
+                <p>Teléfono: +51 944 575 950</p>
+                <p>Lima, Perú</p>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 VISIÓN NÍTIDA
         </p>
-
     </footer>
 
 </body>
-
 </html>
