@@ -1,12 +1,12 @@
 
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;  /*DESPLAZAMIENTO SUAVE*/
 }
 
 body {
@@ -52,7 +52,7 @@ header {
 .marca {
     width: 100px;
     height: 100px;
-    object-fit: cover;
+    object-fit: cover;  /* AJUSTA LA IMAGEN*/
     border-radius: 50%;
     border: 3px solid white;
     transition: transform 0.3s;
@@ -98,7 +98,7 @@ section {
     margin-bottom: 25px;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* SOMBRA*/
 }
 
 /* GALERÍA CON FLEXBOX */
@@ -106,7 +106,7 @@ section {
 .galeria {
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: stretch; 
     flex-wrap: wrap;
     gap: 22px;
     margin: 25px 0;
@@ -172,7 +172,7 @@ section {
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; 
     margin-top: 20px;
 }
 
@@ -187,7 +187,7 @@ th {
     color: white;
 }
 
-tbody tr:nth-child(even) {
+tbody tr:nth-child(even) { 
     background-color: #edf7f6;
 }
 
@@ -199,7 +199,7 @@ form {
 }
 
 label {
-    display: block;
+    display: block; 
     margin-top: 15px;
     font-weight: bold;
 }
@@ -214,7 +214,7 @@ input, textarea {
     font-size: 16px;
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus { 
     outline: 2px solid #08afa5;
 }
 
@@ -225,9 +225,9 @@ button, .boton {
     padding: 12px 20px;
     border: none;
     border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
+    text-decoration: none; 
+    font-weight: bold; 
+    cursor: pointer; 
     margin-top: 15px;
 }
 
@@ -250,8 +250,8 @@ footer {
     gap: 25px;
 }
 
-.footer-container > div {
-    flex: 1 1 220px;
+.footer-container > div { 
+    flex: 1 1 220px; 
 }
 
 .footer-container h3 {
@@ -269,9 +269,18 @@ footer a:hover {
 
 .copyright {
     text-align: center;
-    border-top: 1px solid #4c8b86;
+    border-top: 1px solid #4c8b86; 
     padding-top: 15px;
     margin-top: 25px;
+}
+/* PANTALLAS MAS GRANDES*/
+
+@media (min-width: 901px) {
+    main {
+        width: 95%;
+        max-width: none;
+        margin: 20px auto;
+    }
 }
 
 /* TABLETAS */
